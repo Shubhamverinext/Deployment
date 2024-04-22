@@ -138,7 +138,7 @@ async def receive_json(json_data: dict, current_user: dict = Depends(get_current
 # Entry point of the script
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-    config = Config(app, host='0.0.0.0', port=80, log_level='info')
+    config = Config(app, host='0.0.0.0', port=8080, log_level='info')
     server = Server(config)
     server.run()
 
